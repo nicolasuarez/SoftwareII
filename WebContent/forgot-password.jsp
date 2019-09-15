@@ -47,7 +47,7 @@
                     <div class="form-group">
                       <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Dirección de correo electrónico o nombre de usuario">
                     </div>
-                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                    <a href="login.jsp" class="btn btn-primary btn-user btn-block">
                      Enviar
                     </a>
                   </form>

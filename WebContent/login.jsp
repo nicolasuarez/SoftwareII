@@ -59,7 +59,7 @@
                       Acceder
                     </a>
                     <div class="text-center">
-                    <a class="small" href="forgot-password.html">¿Se te ha olvidado la contraseña?</a>
+                    <a class="small" href="forgot-password.jsp">¿Se te ha olvidado la contraseña?</a>
                   </div>
                   </form>
                   <hr>
@@ -67,7 +67,7 @@
                     <h1 class="h4 text-gray-900 mb-4">¿No tienes cuenta?</h1>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.html">Registrate a Usapp</a>
+                    <a class="small" href="register.jsp">Registrate a Usapp</a>
                   </div>
                   
                 </div>
