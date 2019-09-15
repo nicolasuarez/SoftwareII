@@ -55,7 +55,7 @@
                         <label class="custom-control-label" for="customCheck">Recuérdame</label>
                       </div>
                     </div>
-                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                    <a href="dashboard.jsp" class="btn btn-primary btn-user btn-block">
                       Acceder
                     </a>
                     <div class="text-center">

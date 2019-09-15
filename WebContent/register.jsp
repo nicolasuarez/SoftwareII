@@ -178,14 +178,18 @@
                   </div>
                 </div>
               </form>
-              <!---->
-            </div>
-            <a href="login.html" class="btn btn-primary btn-user btn-block">
+             <form class="user">
+                    <div class="form-group">
+                      
+                    <a href="login.jsp" class="btn btn-primary btn-user btn-block">
                   Register Account
                 </a>
+                </div>
+                  </form>
+ 
             <hr>
             <div class="text-center">
-              <a class="small" href="login.jsp">Already have an account? Login!</a>
+              <a class="small" href="login.jsp">Ya tienes una cuenta? Inicia sesión!</a>
             </div>
           </div>
         </div>
