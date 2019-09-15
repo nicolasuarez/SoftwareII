@@ -1,15 +1,3 @@
-/*!
- * Start Bootstrap - SB Admin 2 v4.0.6 (https://startbootstrap.com/template-overviews/sb-admin-2)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -22,6 +10,7 @@
   --teal: #20c9a6;
   --cyan: #36b9cc;
   --white: #fff;
+  --black:#000;
   --gray: #858796;
   --gray-dark: #5a5c69;
   --primary: #4e73df;
@@ -11641,19 +11630,19 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url("https://image.freepik.com/free-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background: url("https://image.freepik.com/free-photo/businesswoman-working-office-with-smile-while-sitting_1150-14793.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url("https://image.freepik.com/free-photo/young-woman-posing-imaging_23-2147653640.jpg");
   background-position: center;
   background-size: cover;
 }
