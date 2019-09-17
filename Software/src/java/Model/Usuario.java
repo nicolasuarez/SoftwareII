@@ -10,20 +10,23 @@ package Model;
  * @author Luis
  */
 public class Usuario {
-   private  String tipo;
-   private String nombre;
-   private String apellido;
-   private int id;
-   private String usuario;
-   private String contraseña;
 
-    public Usuario(String tipo, String nombre, String apellido, int id, String usuario, String contraseña) {
+    private String tipo;
+    private String nombre;
+    private String apellido;
+    private int id;
+    private String usuario;
+    private String contraseña;
+    private String Sexo;
+
+    public Usuario(String tipo, String nombre, String apellido, int id, String usuario, String contraseña, String Sexo) {
         this.tipo = tipo;
         this.nombre = nombre;
         this.apellido = apellido;
         this.id = id;
         this.usuario = usuario;
         this.contraseña = contraseña;
+        this.Sexo = Sexo;
     }
 
     public String getTipo() {
@@ -73,6 +76,13 @@ public class Usuario {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
-   
-   
+
+    public String getSexo() {
+        return Sexo;
+    }
+
+    public void setSexo(String Sexo) {
+        this.Sexo = Sexo;
+    }
+
 }
