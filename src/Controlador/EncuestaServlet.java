@@ -22,6 +22,7 @@ public class EncuestaServlet extends HttpServlet {
     public void init() throws ServletException {
         this.encuesta = new EncuestaDAO();
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -48,43 +49,40 @@ public class EncuestaServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String valop = request.getParameter("valop");
+        //String valop = request.getParameter("valop");
         int id = Integer.parseInt(request.getParameter("ide"));
         String genero = request.getParameter("genero");
         int Semestre = Integer.parseInt(request.getParameter("semestre"));
         String habitos_De_Estudio = request.getParameter("habitos");
-        System.out.println("hola");
         String Edad = request.getParameter("edad");
-         boolean trabaja;
-         if (request.getParameter("trabaja").compareTo("si") == 0) {
-         trabaja = true;
-         } else {
-         trabaja = false;
-         }
-         String hobbies = request.getParameter("hobbies");
-         boolean statusCarrera;
-         if(request.getParameter("status").compareTo("si")==0){
-         statusCarrera = true;
-         }else{
-         statusCarrera = false;
-         }
-         String nucleoFamiliar = request.getParameter("nucleo");
-         String lugarDeOrigen = request.getParameter("origen");
-         String Enfermedad = request.getParameter("enfermedad");
-         String gusto = request.getParameter("gusto");
-         String Carrera = request.getParameter("carrera");
-         
-        if (valop != null && id != 0 && genero!= null && Semestre!=0 && habitos_De_Estudio != null) {
-            if (valop.compareTo("go") == 0) {
-                Encuesta aux = new Encuesta(id, genero, Semestre, habitos_De_Estudio, Edad, 
-                        trabaja, hobbies, statusCarrera, nucleoFamiliar, lugarDeOrigen, Enfermedad, 
-                        gusto, Carrera);
-                encuesta.add(aux);
-            }
+        boolean trabaja;     
+        if (request.getParameter("trabaja").compareTo("Si") == 0) {
+            trabaja = true;
+        } else {
+            trabaja = false;
+        }
+        String hobbies = request.getParameter("hobbies");
+        boolean statusCarrera;
+        if (request.getParameter("status").compareTo("Al dia") == 0) {
+            statusCarrera = true;
+        } else {
+            statusCarrera = false;
+        }
+        String nucleoFamiliar = request.getParameter("nucleo");
+        String lugarDeOrigen = request.getParameter("origen");
+        String Enfermedad = request.getParameter("enfermedad");
+        String gusto = request.getParameter("gusto");
+        String Carrera = request.getParameter("carrera");
+
+        if (id != 0 && genero != null && Semestre != 0 && habitos_De_Estudio != null) {
+            Encuesta aux = new Encuesta(id, genero, Semestre, habitos_De_Estudio, Edad,
+                    trabaja, hobbies, statusCarrera, nucleoFamiliar, lugarDeOrigen, Enfermedad,
+                    gusto, Carrera);
+            encuesta.add(aux);
         } else {
             response.sendRedirect("EncuestaJSP.jsp?error=IngreseDatos");
         }
-
+        
     }
 
     /**

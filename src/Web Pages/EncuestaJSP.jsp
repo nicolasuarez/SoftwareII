@@ -9,32 +9,44 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.core.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.button.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.dialog.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.tabs.js"></script>
-        <script type="text/javascript" src="js/jquery.dataTables.js"></script>
-        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
-        <script >
-            function procesarOperacion(valop) {
-                var datos;
-                if(valop == 'go'){
-                    console.log();
-                    datos = "valop=" + valop + "&ide=" + $("#ide").val() + "&genero=" + $("#genero").val()
-                            + "semestre=" + $("#semestre").val() + "habitos=" + $("#habitos").val();
-                    $.ajax({
-                        url: "EncuestaServlet",
-                        type: 'POST',
-                        data: datos,
-                        succes: function (data) {
-                            console.log(data);
-                        }
+
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#enviar').click(function (event) {
+                    var idvar = $('#ide').val();
+                    var generovar = $('#genero').val();
+                    var semestrevar = $('#semestre').val();
+                    var habitosvar = $('#habitos').val();
+                    var edadvar = $('edad').val();
+                    var combo = document.getElementById("trabaja");                    
+                    var trabajavar = combo.options[combo.selectedIndex].text;
+                    var hobbiesvar = $('hobbies').val();
+                    var combos = document.getElementById("status"); 
+                    var statusvar = combos.options[combos.selectedIndex].text;
+                    var nucleovar = $('nucleo').val();
+                    var origenvar = $('origen').val();
+                    var enfermedadvar = $('enfermedad').val();
+                    var gustovar = $('gusto').val();
+                    var carreravar = $('carrera').val();
+                    $.post('EncuestaServlet', {
+                        ide: idvar,
+                        genero: generovar,
+                        semestre: semestrevar,
+                        habitos: habitosvar,
+                        edad: edadvar,
+                        trabaja: trabajavar,
+                        hobbies: hobbiesvar,
+                        status: statusvar,
+                        nucleo: nucleovar,
+                        origen: origenvar,
+                        enfermedad: enfermedadvar,
+                        gusto: gustovar,
+                        carrera: carreravar
                     });
-                }
-            }
+                });
+            });
         </script>
         <title>Encuesta</title>
     </head>
@@ -58,6 +70,6 @@
         <p> Enfermedad: <input  id="enfermedad" type="text"> </p>
         <p> Gusto: <input  id="gusto" type="text"> </p>
         <p> Carrera: <input  id="carrera" type="text"> </p>
-        <p> <button id="enviar" onclick="procesarOperacion('go')">Enviar</button></p>
-    </body>
+        <p> <input type="button" id="enviar" ></button></p>
+</body>
 </html>
