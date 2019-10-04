@@ -21,33 +21,92 @@
 <!-- Custom styles for this template-->
 <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <script>
+    var datos;
+
+//Verificar El Email
+
+
+
 
     function procesarOperacion(valOp, idCam, id) {
-        var datos;
-        if (valOp == 'GU') {
-            datos = "txtValOpe" + valOp + "&exampleFirstName" + $("#exampleFirstName").val()
-                    + "&exampleLastName=" + $("#exampleLastName").val()
-                    + "&exampleInputId=" + $("#exampleInputId").val() + "&exampleInputUser=" + $("#exampleInputUser").val()
-                    + "&exampleInputEmail=" + $("#exampleInputEmail").val() + "&exampleInputUser=" + $("#exampleInputUser").val()
-                    + "&exampleInputPassword=" + $("#exampleInputPassword").val();
-           
+        console.log(valOp);
+
+
+        if (valOp === 'GU') {
+            var txtValOpe = valOp;
+            var exampleFirstName = $("#exampleFirstName").val();
+            var exampleLastName = $("#exampleLastName").val();
+            var exampleInputId = $("#exampleInputId").val();
+            var exampleInputEmail = $("#exampleInputEmail").val();
+            var exampleInputUser = $("#exampleInputUser").val();
+            var exampleInputPassword = $("#exampleInputPassword").val();
+            var exampleRepeatPassword = $("#exampleRepeatPassword").val();
+            var dia = $("#dia").val();
+            var mes = $("#mes").val();
+            var año = $("#año").val();
+        }
+        var Valido = true;
+
+        $(document).on(function () {
+            $("#exampleInputUser").blur(function () {
+                var valor = exampleInputUser;
+                var attr = " exampleInputUser";
+                Valido = false;
+                $.ajax({
+
+                    url: "/Software/Register",
+                    type: 'GET',
+                    dataType: "json",
+                    data: {
+                        valor: valor,
+                        attr: attr
+                    },
+                    success: function (a) {
+                        Valido = a.Email;
+
+                        console.log(Valido);
+                        if (!Valido) {
+                            $("#exampleInputUser").val(null);
+                            $("#exampleInputUser").val().attr("placeholder", "Email no valido");
+
+                        }
+                    },
+                    error: function () {
+                        console.log("No se ha podido obtener la información");
+                    }
+                });
+            });
+        });
+        console.log(Valido);
+        if (Valido) {
+            $.ajax({
+                url: "/Software/Register",
+                type: 'POST',
+                data: {
+                    txtValOpe: txtValOpe,
+                    exampleFirstName: exampleFirstName,
+                    exampleLastName: exampleLastName,
+                    exampleInputId: exampleInputId,
+                    exampleInputEmail: exampleInputEmail,
+                    exampleInputUser: exampleInputUser,
+                    exampleInputPassword: exampleInputPassword,
+                    dia: dia,
+                    mes: mes,
+                    año: año
+                },
+                succes: function (data) {
+                    console.log(data);
+                    location.href = "./login.jsp";
+
+                },
+                complete: function (data) {
+                    console.log(data);
+                    //    location.href = "./login.jsp";
+                }
+            });
         }
 
-
-        $.ajax({
-            url: "/Software/register",
-            type: 'POST',
-
-            data: datos,
-            succes: function (data) {
-                console.log(data);
-            },
-            complete: function (data) {
-            }
-        });
     }
-
-
 
 
 
@@ -107,88 +166,88 @@
                                 <div class="text-Left">
                                     <h1 class="h5 text-gray-800 mb-3">Fecha de nacimiento</h1>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-2">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Día</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                            <option>31</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Mes</option>
-                                            <option>enero</option>
-                                            <option>febrero</option>
-                                            <option>marzo</option>
-                                            <option>abril</option>
-                                            <option>mayo</option>
-                                            <option>junio</option>
-                                            <option>julio</option>
-                                            <option>agosto</option>
-                                            <option>septiembre</option>
-                                            <option>octubre</option>
-                                            <option>noviembre</option>
-                                            <option>diciembre</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Año</option>
-                                            <option>1990</option>
-                                            <option>1991</option>
-                                            <option>1992</option>
-                                            <option>1993</option>
-                                            <option>1994</option>
-                                            <option>1995</option>
-                                            <option>1996</option>
-                                            <option>1997</option>
-                                            <option>1998</option>
-                                            <option>1999</option>
-                                            <option>2000</option>
-                                            <option>2001</option>
-                                            <option>2002</option>
-                                            <option>2003</option>
-                                            <option>2004</option>
-                                            <option>2005</option>
-                                            <option>2006</option>
-                                            <option>2007</option>
-                                            <option>2008</option>
-                                            <option>2009</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                    </div>
+
+                                <div class="form-group col-md-2">
+                                    <select id="dia" class="form-control">
+                                        <option selected>Día</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
                                 </div>
+                                <div class="form-group col-md-2">
+                                    <select id="mes" class="form-control">
+                                        <option selected>Mes</option>
+                                        <option>enero</option>
+                                        <option>febrero</option>
+                                        <option>marzo</option>
+                                        <option>abril</option>
+                                        <option>mayo</option>
+                                        <option>junio</option>
+                                        <option>julio</option>
+                                        <option>agosto</option>
+                                        <option>septiembre</option>
+                                        <option>octubre</option>
+                                        <option>noviembre</option>
+                                        <option>diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <select id="año" class="form-control">
+                                        <option selected>Año</option>
+                                        <option>1990</option>
+                                        <option>1991</option>
+                                        <option>1992</option>
+                                        <option>1993</option>
+                                        <option>1994</option>
+                                        <option>1995</option>
+                                        <option>1996</option>
+                                        <option>1997</option>
+                                        <option>1998</option>
+                                        <option>1999</option>
+                                        <option>2000</option>
+                                        <option>2001</option>
+                                        <option>2002</option>
+                                        <option>2003</option>
+                                        <option>2004</option>
+                                        <option>2005</option>
+                                        <option>2006</option>
+                                        <option>2007</option>
+                                        <option>2008</option>
+                                        <option>2009</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                </div>
+
                             </form>
                             <form>
                                 <div class="text-Left">
@@ -224,8 +283,6 @@
                             <form class="user">
 
                                 <a  class="btn btn-primary btn-user btn-block" id="mostrar"  onclick="procesarOperacion('GU', 'txtValOpe')">
-
-
                                     Register Account
                                 </a>
                         </div>
