@@ -1,0 +1,14 @@
+utils\utils$TestExclStrat.class
+Controllers\Register.class
+Model\Usuario.class
+Controllers\NewServlet.class
+DAO\IBaseDatos.class
+Model\ManagerInicioSesion.class
+DAO\NewMain.class
+filter\NewClass.class
+DAO\UsuarioDao.class
+Model\Sesion.class
+Model\RSAtoken.class
+Controllers\Login.class
+DAO\Conexion.class
+utils\utils.class
