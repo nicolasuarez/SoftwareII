@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,18 +73,12 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Básicas:</h6>
             <a class="collapse-item" href="encuesta1.html">Encuesta1</a>
             <a class="collapse-item" href="encuesta2.html">Encuesta 2</a>
             <a class="collapse-item" href="encuesta3.html">Encuesta 3</a>
-            <h6 class="collapse-header">Profundización:</h6>
-            <a class="collapse-item" href="encuesta4.html">Encuesta 4</a>
-            <a class="collapse-item" href="encuesta5.html">Encuesta 5</a>
           </div>
         </div>
       </li>
-
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -111,19 +103,6 @@
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -164,50 +143,26 @@
             <h1 class="h3 mb-0 text-gray-800">Mi sitio</h1>
           </div>
           <!-- Content Row -->
-
           <div class="row">
-            <div class="col-xl-6 col-lg-4">
-              <div class="card shadow mb-4">
-
+            <div class="col-xl-12 col-lg-2">
+              <div class="card shadow mb-3">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Tasas de deserción por semestres</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Tasas de deserción por semestres</h6> <a target="_blank" rel="nofollow"
+                  href="https://www.mineducacion.gov.co/sistemasdeinformacion/1735/articles-254702_archivo_pdf_indicadores_permanencia.pdf">Mineducación</a>.
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
                   </div>
-                  <p>Mire esta tabla en <a target="_blank" rel="nofollow"
-                      href="https://www.mineducacion.gov.co/sistemasdeinformacion/1735/articles-254702_archivo_pdf_indicadores_permanencia.pdf">Mineducaci�n</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-6 col-lg-4">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Noticias</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/University.svg" alt="">
-                  </div>
-                  <p>Lee las siguientes noticias de <a target="_blank" rel="nofollow"
-                      href="https://www.elespectador.com/tags/desercion-universitaria">El espectador</a>, sobre
-                    deserción universitaria.</p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-        <!-- /.container-fluid -->
-
+        
       </div>
       <!-- End of Main Content -->
-
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
