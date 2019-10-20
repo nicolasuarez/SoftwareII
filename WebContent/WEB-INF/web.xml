@@ -24,12 +24,12 @@
   </servlet-mapping>
   
     <servlet>
-  	<servlet-name>ForgotPassword</servlet-name>
-  	<servlet-class>Controllers.ForgotPassword</servlet-class>
+  	<servlet-name>Password</servlet-name>
+  	<servlet-class>Controllers.password</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>ForgotPassword</servlet-name>
-  	<url-pattern>/forgot-password</url-pattern>
+  	<servlet-name>Password</servlet-name>
+  	<url-pattern>/password</url-pattern>
   </servlet-mapping>
 
     <servlet>
@@ -49,5 +49,167 @@
   	<servlet-name>Administrator</servlet-name>
   	<url-pattern>/administrator</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Administradores</servlet-name>
+  	<servlet-class>Controllers.Administradores</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Administradores</servlet-name>
+  	<url-pattern>/administratores</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+  	<servlet-name>Encuesta1</servlet-name>
+  	<servlet-class>Controllers.Encuesta1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta1</servlet-name>
+  	<url-pattern>/encuesta1</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta1Adm</servlet-name>
+  	<servlet-class>Controllers.Encuesta1Adm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta1Adm</servlet-name>
+  	<url-pattern>/encuesta1Adm</url-pattern>
+  </servlet-mapping>
   
+<servlet>
+  	<servlet-name>Encuesta2</servlet-name>
+  	<servlet-class>Controllers.Encuesta2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta2</servlet-name>
+  	<url-pattern>/encuesta2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta2Adm</servlet-name>
+  	<servlet-class>Controllers.Encuesta2Adm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta2Adm</servlet-name>
+  	<url-pattern>/encuesta2Adm</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  	<servlet-name>Encuesta3</servlet-name>
+  	<servlet-class>Controllers.Encuesta3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta3</servlet-name>
+  	<url-pattern>/encuesta3</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta3Adm</servlet-name>
+  	<servlet-class>Controllers.Encuesta3Adm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta3Adm</servlet-name>
+  	<url-pattern>/encuesta3Adm</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  	<servlet-name>Encuesta4</servlet-name>
+  	<servlet-class>Controllers.Encuesta4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta4</servlet-name>
+  	<url-pattern>/encuesta4</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta4Adm</servlet-name>
+  	<servlet-class>Controllers.Encuesta4Adm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta4Adm</servlet-name>
+  	<url-pattern>/encuesta4Adm</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta5</servlet-name>
+  	<servlet-class>Controllers.Encuesta5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta5</servlet-name>
+  	<url-pattern>/encuesta5</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Encuesta5Adm</servlet-name>
+  	<servlet-class>Controllers.Encuesta5Adm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Encuesta5Adm</servlet-name>
+  	<url-pattern>/encuesta5Adm</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>EncuestasAdm</servlet-name>
+  	<servlet-class>Controllers.EncuestasAdm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EncuestasAdm</servlet-name>
+  	<url-pattern>/encuestasAdm</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Estudiantes</servlet-name>
+  	<servlet-class>Controllers.Estudiantes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Estudiantes</servlet-name>
+  	<url-pattern>/estudiantes</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Horario</servlet-name>
+  	<servlet-class>Controllers.Horario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Horario</servlet-name>
+  	<url-pattern>/horario</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Notas</servlet-name>
+  	<servlet-class>Controllers.Notas</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Notas</servlet-name>
+  	<url-pattern>/notas</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Polls</servlet-name>
+  	<servlet-class>Controllers.Polls</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Polls</servlet-name>
+  	<url-pattern>/polls</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>Profile</servlet-name>
+  	<servlet-class>Controllers.Profile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Profile</servlet-name>
+  	<url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>ProfileAdm</servlet-name>
+  	<servlet-class>Controllers.PofileAdm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ProfileAdm</servlet-name>
+  	<url-pattern>/profileAdm</url-pattern>
+  </servlet-mapping>
+
 </web-app>

@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ForgotPassword extends HttpServlet {
+public class Password extends HttpServlet {
  public void doGet(HttpServletRequest request, HttpServletResponse response) {
 	 try {
-		RequestDispatcher rd = getServletContext().getRequestDispatcher("/forgot-password.jsp");
+		RequestDispatcher rd = getServletContext().getRequestDispatcher("/password.jsp");
 		rd.forward(request,response);
 	} catch (ServletException e) {
 		// TODO Auto-generated catch block
