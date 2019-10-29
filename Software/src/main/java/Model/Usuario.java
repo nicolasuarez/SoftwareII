@@ -24,6 +24,7 @@ public class Usuario {
     private String Sexo;
     private String correo;
     private Date fechaN;
+    private double porcentaje;
 
     public Usuario(String nombre, String apellido, int id, String usuario, String contraseña, String Sexo, String correo, Date fechaN) {
 
@@ -110,6 +111,14 @@ public class Usuario {
 
     public void setSexo(String Sexo) {
         this.Sexo = Sexo;
+    }
+
+    public double getPorcentaje() {
+        return porcentaje;
+    }
+
+    public void setPorcentaje(double porcentaje) {
+        this.porcentaje = porcentaje;
     }
 
 }

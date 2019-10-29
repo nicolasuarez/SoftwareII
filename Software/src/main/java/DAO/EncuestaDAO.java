@@ -19,6 +19,7 @@ public class EncuestaDAO {
     
     public void add (Encuesta en){
         lista.add(en);
+        en.toString();
     }
     
     public Encuesta serach (int id){        

@@ -52,4 +52,12 @@
         <servlet-name>Administrator</servlet-name>
         <url-pattern>/Administrator</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>EncuestaServlet</servlet-name>
+        <servlet-class>Controllers.EncuestaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EncuestaServlet</servlet-name>
+        <url-pattern>/EncuestaServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
