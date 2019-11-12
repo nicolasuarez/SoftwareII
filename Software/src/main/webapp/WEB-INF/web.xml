@@ -53,7 +53,10 @@
         <url-pattern>/Administrator</url-pattern>
     </servlet-mapping>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> Marcocastellanos
     <servlet>
         <servlet-name>EncuestaServlet</servlet-name>
         <servlet-class>Controllers.EncuestaServlet</servlet-class>
@@ -62,5 +65,8 @@
         <servlet-name>EncuestaServlet</servlet-name>
         <url-pattern>/EncuestaServlet</url-pattern>
     </servlet-mapping>
+<<<<<<< HEAD
+>>>>>>> Marcocastellanos
+=======
 >>>>>>> Marcocastellanos
 </web-app>

@@ -25,6 +25,10 @@ public class Usuario {
     private String correo;
     private Date fechaN;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    private double porcentaje;
+>>>>>>> Marcocastellanos
 =======
     private double porcentaje;
 >>>>>>> Marcocastellanos
@@ -117,7 +121,10 @@ public class Usuario {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> Marcocastellanos
     public double getPorcentaje() {
         return porcentaje;
     }
@@ -126,5 +133,8 @@ public class Usuario {
         this.porcentaje = porcentaje;
     }
 
+<<<<<<< HEAD
+>>>>>>> Marcocastellanos
+=======
 >>>>>>> Marcocastellanos
 }
