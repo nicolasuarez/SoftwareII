@@ -20,12 +20,16 @@
 
 <!-- Custom styles for this template-->
 <link href="css/sb-admin-2.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9/core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9/sha256.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
 <script>
     var datos;
 
 //Verificar El Email
 
-    
+
 
 
 
@@ -47,12 +51,22 @@
             var dia = $("#dia").val();
             var mes = $("#mes").val();
             var año = $("#año").val();
+
+            var plainText = exampleInputPassword;
+            var md = forge.md.sha256.create();
+            md.start();
+            md.update(plainText, "utf8");
+            var hashText = md.digest().toHex();
+
+
         }
         var Valido = true;
 
-      
-        
+
+
         console.log(Valido);
+        console.log(hashText);
+        console.log("yolo");
         if (Valido) {
             $.ajax({
                 url: "/Software/Register",
@@ -64,7 +78,7 @@
                     exampleInputId: exampleInputId,
                     exampleInputEmail: exampleInputEmail,
                     exampleInputUser: exampleInputUser,
-                    exampleInputPassword: exampleInputPassword,
+                    exampleInputPassword: hashText,
                     dia: dia,
                     mes: mes,
                     año: año
@@ -76,7 +90,11 @@
                 },
                 complete: function (data) {
                     console.log(data);
-                    //    location.href = "./login.jsp";
+                   location.href = "./login.jsp";
+                    
+                }, error: function (err) {
+                    console.log(err);
+                    alert("Hola, No podemos Atederte por el momento, lo sentimos");
                 }
             });
         }

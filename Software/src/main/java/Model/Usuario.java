@@ -24,14 +24,9 @@ public class Usuario {
     private String Sexo;
     private String correo;
     private Date fechaN;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
     private double porcentaje;
->>>>>>> Marcocastellanos
-=======
-    private double porcentaje;
->>>>>>> Marcocastellanos
+
 
     public Usuario(String nombre, String apellido, int id, String usuario, String contraseña, String Sexo, String correo, Date fechaN) {
 
@@ -120,11 +115,6 @@ public class Usuario {
         this.Sexo = Sexo;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Marcocastellanos
     public double getPorcentaje() {
         return porcentaje;
     }
@@ -133,8 +123,5 @@ public class Usuario {
         this.porcentaje = porcentaje;
     }
 
-<<<<<<< HEAD
->>>>>>> Marcocastellanos
-=======
->>>>>>> Marcocastellanos
+
 }

@@ -26,7 +26,7 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
          
-            Sesion lol=   ManagerInicioSesion.IniciarSesion(request);
+            Sesion lol =   ManagerInicioSesion.IniciarSesion(request);
             
             if(lol.getGalleta()!=null){
                 lol.getGalleta().setHttpOnly(true);

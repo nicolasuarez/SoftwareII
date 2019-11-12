@@ -79,7 +79,7 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Básicas:</h6>
-            <a class="collapse-item" href="#">Encuesta1</a>
+            <a class="collapse-item" href="./EncuestaJSP.jsp">Encuesta1</a>
             <a class="collapse-item" href="#">Encuesta 2</a>
             <a class="collapse-item" href="#">Encuesta 3</a>
             <h6 class="collapse-header">Profundización:</h6>

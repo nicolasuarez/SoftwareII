@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9/sha256.js"></script>
+    
+    <script type="text/Javascript">
+        
+        function generateHash()
+	{
+        	var plainText = document.getElementById('plainText').value;
+		var hashText = CryptoJS.SHA256(plainText);   
+                document.getElementById("hashText").innerHTML = hashText;
+        }        
+    </script>
+</head>
+<body>
+    
+        <h1>JavaScript SHA256 Hash Example Using CryptoJS</h1>
+
+	<br><strong>Enter the Sample Text : </strong><input id='plainText' type='text' />
+
+	<br><br><strong>Hashed Text (SHA256)  : </strong><span id='hashText'></span>
+
+	<br><br><button onclick="generateHash()">Calculate Hash</button>
+</body>
+</html>

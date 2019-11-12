@@ -5,6 +5,10 @@
  */
 package DAO;
 
+import controladores.*;
+import entidades.*;
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -13,15 +17,17 @@ public class NewMain {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
-    public static void main(String[] args) {
-        System.out.println("sdasdasdasdasdasd");
-        try {
-            Conexion c = new Conexion();
-            c.getConnection();
-        } catch (Exception e) {
+    public static void main(String[] args) throws Exception {
 
-        }
+        UsuariosJpaController em = new UsuariosJpaController();
+        em.findUsuarios(1);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("------------");
+        String a=sc.nextLine();
+        Usuarios findUsuariosU;
+        findUsuariosU = em.findUsuariosU(a);
 
     }
 }
