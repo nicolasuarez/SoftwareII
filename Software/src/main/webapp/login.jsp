@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+<<<<<<< HEAD
    <html lang="en">
+=======
+<html lang="en">
+>>>>>>> Marcocastellanos
 
 
 
@@ -69,8 +73,11 @@
                 }
             });
         });
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> Marcocastellanos
     </script>
 
 
