@@ -184,14 +184,14 @@
               </form>
               <form class="user">
                 <div class="form-group">
-                  <a href="login.html" class="btn btn-primary btn-user btn-block">
+                  <a href="login.jsp" class="btn btn-primary btn-user btn-block">
                     Crear cuenta
                   </a>
                 </div>
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="login.html">Ya tienes una cuenta? Inicia sesion!</a>
+                <a class="small" href="login.jsp">Ya tienes una cuenta? Inicia sesion!</a>
               </div>
               <div class="copyright text-center my-auto">
                 <span>Copyright &copy; Software II, 2019</span>

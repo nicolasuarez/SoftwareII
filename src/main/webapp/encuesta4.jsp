@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +12,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon"
         href="https://www.usergioarboleda.edu.co/wp-content/uploads/2017/03/cropped-U-SERGIOV11-290x220.png?1dbd99">
-    <title>Encuesta1</title>
+    <title>Encuesta4</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.jsp">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -50,15 +52,16 @@
                 Mi sitio
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="profile.html">
+                <a class="nav-link" href="profile.jsp">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Perfil</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="notas.html">
+                <a class="nav-link" href="notas.jsp">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Notas</span></a>
             </li>
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
@@ -68,9 +71,9 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="encuesta1.html">Encuesta1</a>
-                        <a class="collapse-item" href="encuesta2.html">Encuesta 2</a>
-                        <a class="collapse-item" href="encuesta3.html">Encuesta 3</a>
+                        <a class="collapse-item" href="encuesta1.jsp">Encuesta1</a>
+                        <a class="collapse-item" href="encuesta2.jsp">Encuesta 2</a>
+                        <a class="collapse-item" href="encuesta3.jsp">Encuesta 3</a>
                         
                     </div>
                 </div>
@@ -116,11 +119,11 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile.html">
+                                <a class="dropdown-item" href="profile.jsp">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Mi perfil
                                 </a>
-                                <a class="dropdown-item" href="polls.html">
+                                <a class="dropdown-item" href="polls.jsp">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Encuestas
                                 </a>
@@ -140,40 +143,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Encuesta 1</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Encuesta 4</h1>
                     </div>
-                    <p> Usuario <input  id="usuario" type="text"> </p>
-        <p> Semestre: <input  id="semestre" type="text"> </p>
-        <p> Habitos de estudio: <select id="habitos">
-                <option value="antelacion">Estudia con antelacion</option>
-                <option value="estudiatar">Estudia poco antes de las pruebas</option>
-                <option value="noestudia">No estudia o no lo sufuciente</option>                
-            </select></p>
-        <p> Edad: <input  id="edad" type="text"> </p>
-        <p> Trabaja: <select id="trabaja">
-                <option value="si">Si</option>
-                <option value="no">No</option>                
-            </select> </p>
-        <p> Hobbies: <input  id="hobbies" type="text"> </p>
-        <p> Status: <select id="status">
-                <option value="si">Al dia</option>
-                <option value="no">Atrasado</option>                
-            </select> </p>
-        <p> Nucleo Familiar: <select id="nucleo"> 
-                <option value="padremadre">Padre y Madre</option>
-                <option value="padre">Padre</option>
-                <option value="madre">Madre</option>
-                <option value="familiar">Familiar(es)</option>
-                <option value="unipersonal">Unipersonal</option>
-            </select> </p>
-        <p> Ciudad de origen: <input  id="origen" type="text"> </p>
-        <p> Enfermedad: <select id="enfermedad">
-                <option value="si">Si</option>
-                <option value="no">No</option>  
-            </select> </p>
-        <p> Gusto: <input  id="gusto" type="text"> </p>
-        <p> Carrera: <input  id="carrera" type="text"> </p>
-        <p> <input type="button" id="enviar" >Enviar</button></p>
 
                     
 
@@ -211,7 +182,7 @@
                     <div class="modal-body">Seleccione "Salir" para cerrar sesión.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-primary" href="login.html">Salir</a>
+                        <a class="btn btn-primary" href="login.jsp">Salir</a>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon"
         href="https://www.usergioarboleda.edu.co/wp-content/uploads/2017/03/cropped-U-SERGIOV11-290x220.png?1dbd99">
-    <title>Encuesta5</title>
+    <title>Perfil</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,6 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -34,7 +33,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.jsp">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -52,12 +51,12 @@
                 Mi sitio
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="profile.html">
+                <a class="nav-link" href="profile.jsp">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Perfil</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="notas.html">
+                <a class="nav-link" href="notas.jsp">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Notas</span></a>
             </li>
@@ -71,9 +70,9 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="encuesta1.html">Encuesta1</a>
-                        <a class="collapse-item" href="encuesta2.html">Encuesta 2</a>
-                        <a class="collapse-item" href="encuesta3.html">Encuesta 3</a>
+                        <a class="collapse-item" href="encuesta1.jsp">Encuesta1</a>
+                        <a class="collapse-item" href="encuesta2.jsp">Encuesta 2</a>
+                        <a class="collapse-item" href="encuesta3.jsp">Encuesta 3</a>
                         
                     </div>
                 </div>
@@ -119,11 +118,11 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile.html">
+                                <a class="dropdown-item" href="profile.jsp">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Mi perfil
                                 </a>
-                                <a class="dropdown-item" href="polls.html">
+                                <a class="dropdown-item" href="polls.jsp">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Encuestas
                                 </a>
@@ -143,9 +142,74 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Encuesta 5</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Mi Perfil</h1>
                     </div>
-
+                               <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+                <div class="card shadow mb-4">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>Información</th>
+                              <th>Datos</th>
+                              <th>Acción</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Nombre</td>
+                              <td>Nombre</td>
+                              <td>
+                            <a href="#" class="btn btn-success btn-circle btn-sm">
+                                 <i class="fas fa-check"></i>
+                            </a>
+                            <a href="#" class="btn btn-info btn-circle">
+                                <i class="fas fa-info-circle"></i>
+                            </a>  
+                             <a href="#" class="btn btn-danger btn-circle">
+                                 <i class="fas fa-trash"></i>
+                            </a>
+                            </td>
+                            </tr>
+                            <tr>
+                              <td>Apellido</td>
+                              <td>Apellido</td>
+                              <td>
+                            <a href="#" class="btn btn-success btn-circle btn-sm">
+                                 <i class="fas fa-check"></i>
+                            </a>
+                            <a href="#" class="btn btn-info btn-circle">
+                                <i class="fas fa-info-circle"></i>
+                            </a>  
+                             <a href="#" class="btn btn-danger btn-circle">
+                                 <i class="fas fa-trash"></i>
+                            </a>
+                            </td>
+                            </tr>
+                            <tr>
+                              <td>Semestre</td>
+                              <td>Semestre</td>
+                              <td>
+                            <a href="#" class="btn btn-success btn-circle btn-sm">
+                                 <i class="fas fa-check"></i>
+                            </a>
+                            <a href="#" class="btn btn-info btn-circle">
+                                <i class="fas fa-info-circle"></i>
+                            </a>  
+                             <a href="#" class="btn btn-danger btn-circle">
+                                 <i class="fas fa-trash"></i>
+                            </a>
+                            </td>
+                            </tr>
+                          </tbody>
+                          
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  
                     
 
                 <!-- Footer -->
@@ -182,7 +246,7 @@
                     <div class="modal-body">Seleccione "Salir" para cerrar sesión.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-primary" href="login.html">Salir</a>
+                        <a class="btn btn-primary" href="login.jsp">Salir</a>
                     </div>
                 </div>
             </div>
@@ -203,6 +267,8 @@
         <!-- Page level custom scripts -->
         <script src="js/demo/chart-area-demo.js"></script>
         <script src="js/demo/chart-pie-demo.js"></script>
+
+        
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="administrator.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="administrator.jsp">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -49,7 +51,7 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="estudiantes.html">Estudiantes</a>
+            <a class="collapse-item" href="estudiantes.jsp">Estudiantes</a>
           </div>
         </div>
       </li>
@@ -62,7 +64,7 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="encuestasAdm.html">Encuestas</a>
+            <a class="collapse-item" href="encuestasAdm.jsp">Encuestas</a>
           </div>
         </div>
       </li>
@@ -239,7 +241,7 @@
         <div class="modal-body">Seleccione "Salir" para cerrar sesión.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="login.html">Salir</a>
+          <a class="btn btn-primary" href="login.jsp">Salir</a>
         </div>
       </div>
     </div>

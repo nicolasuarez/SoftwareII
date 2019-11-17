@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +33,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.jsp">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -50,12 +51,12 @@
         Mi sitio
       </div>
       <li class="nav-item">
-        <a class="nav-link" href="profile.html">
+        <a class="nav-link" href="profile.jsp">
           <i class="fas fa-fw fa-wrench"></i>
           <span>Perfil</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="notas.html">
+        <a class="nav-link" href="notas.jsp">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Notas</span></a>
       </li>
@@ -68,9 +69,9 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="encuesta1.html">Encuesta1</a>
-            <a class="collapse-item" href="encuesta2.html">Encuesta 2</a>
-            <a class="collapse-item" href="encuesta3.html">Encuesta 3</a>
+            <a class="collapse-item" href="encuesta1.jsp">Encuesta1</a>
+            <a class="collapse-item" href="encuesta2.jsp">Encuesta 2</a>
+            <a class="collapse-item" href="encuesta3.jsp">Encuesta 3</a>
           </div>
         </div>
       </li>
@@ -112,11 +113,11 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="profile.html">
+                <a class="dropdown-item" href="profile.jsp">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Mi perfil
                 </a>
-                <a class="dropdown-item" href="polls.html">
+                <a class="dropdown-item" href="polls.jsp">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Encuestas
                 </a>
@@ -192,7 +193,7 @@
         <div class="modal-body">Seleccione "Salir" para cerrar sesión.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="login.html">Salir</a>
+          <a class="btn btn-primary" href="login.jsp">Salir</a>
         </div>
       </div>
     </div>
